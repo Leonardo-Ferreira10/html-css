@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(131, 243, 131);
+}
+
+.Cabecalho {
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(rgb(52, 219, 52), rgb(34, 151, 34), #136413, rgb(9, 70, 29));
+}
+
+.menu {
+    text-align: left;
+}
+
+.main{
+    margin: 0px 200px 0px 200px;
+    padding: 10px;
+    background-color: white;
+    text-align: auto;
+}
+
+.pmt {
+    color: rgb(4, 114, 4);
+}
+
+.apm {
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    background-color: green;
+    text-align: center;
+}
+
+.footer {
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    padding: 10px;
+    background-color: white;
+}

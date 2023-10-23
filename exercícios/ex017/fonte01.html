@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+           font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+           /* 
+           Medidas Absolutas
+           cm, mm, in, px, pt, pc
+
+           Medidas Relativas
+           em, ex, rem, Vw, vh, %
+           16px geralmente = 1em
+           */
+           font-size: 1em;
+           /* lighter normal bold bolder */
+        }
+
+        h1 {
+
+            /* shorthand font 
+             - font-style -> font-weight -> font-size -> font-family
+
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            */
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+
+        h2 {
+            font: bold 2em 'Work Sans';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, exercitationem. Perspiciatis, laborum repudiandae! Qui repellat nam laboriosam voluptate deserunt maxime laborum, cum magnam fuga sunt, libero ullam totam inventore porro!Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit atque voluptatem esse, odio animi est aut tenetur excepturi! Sunt omnis facilis dicta repellendus sed repellat quibusdam soluta nisi ratione saepe.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam aspernatur consectetur tempore architecto temporibus! Et accusamus ex at modi consequatur ab exercitationem laudantium ipsum nobis esse, dicta consequuntur sed autem.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dolor, tempora repellat animi mollitia nam nobis dolorum. Dignissimos harum eos, cum quas officiis dolore! Officia quas pariatur atque veritatis porro.</p>
+</body>
+</html>
