@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos doloribus nesciunt itaque minus maxime totam optio numquam beatae incidunt recusandae commodi debitis, est at aspernatur doloremque illo nobis omnis dolor.</p>
+
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas suscipit omnis nisi laudantium dolorem adipisci maxime non unde! Mollitia magnam quaerat ea atque libero aut iure quam voluptatibus eligendi inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis asperiores officiis qui nulla? Enim dicta minima consequatur repellat, earum placeat fugit eligendi saepe temporibus mollitia? Voluptate iusto provident voluptates explicabo?</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem ipsum, dolor sit  amet consectetur adipisicing elit. Dolorum ex saepe, asperiores fuga officiis temporibus nemo facere reiciendis autem quae, corrupti adipisci. Error quasi harum nihil ullam officiis enim ipsam!</p><img src='imagens/pattern001.png'>" sandbox="sandbox" referrerpolicy="no-referrer">
+        <p>Infelizmente seu navegador não é compatível com isso!</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et perferendis dolore nesciunt hic molestias repudiandae quas voluptates voluptas earum unde vel, maiores consequuntur fugit! Maiores assumenda quaerat inventore nemo porro?</p>
+</body>
+</html>
