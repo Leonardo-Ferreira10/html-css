@@ -2,6 +2,136 @@
 
 /* Todas as demais mídias */
 
-@media print {
+/* Typical Device Breakpoints
+------------------------------
+Pequenas Telas -> Até 600px
+Celular -> De 600 até 768
+Tablet -> De 768px até 992px
+Desktop -> De 992px até 1200px
+Grandes Telas -> Acima de 1200px
+*/
+
+@media print { /* Impressão */
+
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+        background-image: url(../imagens/back-print.jpg); /* Desnecessário */
+    }
+
+    main {
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    main::after {
+        content: 'Essa impressão foi feita através do site www.cursoemvideo.com';
+        text-decoration: overline;
+        font-size: 0.7em;
+    }
+
+    img#celular {
+        display: none;
+    }
     
+    img#tablet {
+        display: none;
+    }
+    
+    img#print {
+        display: block;
+    }
+    
+    img#desktop {
+        display: none;
+    }
+    
+    img#tv {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {   /* Tablet */
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    img#celular {
+        display: none;
+    }
+    
+    img#tablet {
+        display: block;
+    }
+    
+    img#print {
+        display: none;
+    }
+    
+    img#desktop {
+        display: none;
+    }
+    
+    img#tv {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {  /* Desktop */
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#celular {
+        display: none;
+    }
+    
+    img#tablet {
+        display: none;
+    }
+    
+    img#print {
+        display: none;
+    }
+    
+    img#desktop {
+        display: block;
+    }
+    
+    img#tv {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {     /* Grandes Telas */
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    img#celular {
+        display: none;
+    }
+    
+    img#tablet {
+        display: none;
+    }
+    
+    img#print {
+        display: none;
+    }
+    
+    img#desktop {
+        display: none;
+    }
+    
+    img#tv {
+        display: block;
+    }
 }
